@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Principal</title>
+    <title>Descargar Aplicación</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,35 +13,44 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #f4f7f6;
+            background-color: #f0f2f5;
             color: #333;
         }
-        .container {
+        .card {
             text-align: center;
             background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
         }
-        h1 { color: #2c3e50; }
-        button {
-            padding: 10px 20px;
-            background-color: #3498db;
+        h1 { color: #1a1a1a; margin-bottom: 0.5rem; }
+        p { color: #666; margin-bottom: 2rem; }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #2ea44f;
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s ease;
         }
-        button:hover { background-color: #2980b9; }
+        .download-btn:hover {
+            background-color: #2c974b;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>¡Bienvenido a mi sitio!</h1>
-        <p>Esta es una vista básica creada con HTML y CSS.</p>
-        <button onclick="alert('¡Hola! Has hecho clic.')">Haz clic aquí</button>
+    <div class="card">
+        <h1>¡Descarga la App!</h1>
+        <p>Obtén la última versión estable directamente desde GitHub.</p>
+        
+        <a href="https://github.com/Benjhamyn992/calculo/releases/latest/download/app-release.apk" class="download-btn">
+            Descargar APK
+        </a>
     </div>
 
 </body>
